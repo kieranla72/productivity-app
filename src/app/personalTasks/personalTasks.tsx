@@ -1,3 +1,5 @@
+"use client";
+
 import { PersonalTask } from "@/api/personalTasks";
 
 type PersonalTaskProps = {

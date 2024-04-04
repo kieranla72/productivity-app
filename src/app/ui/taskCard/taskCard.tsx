@@ -29,7 +29,7 @@ export const TaskCard = ({
     <Card
       sx={{
         border: "2px solid",
-        width: 300,
+        width: 600,
         borderColor: theme.palette.primary.main,
       }}
     >

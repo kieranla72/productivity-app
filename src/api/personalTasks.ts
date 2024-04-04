@@ -7,7 +7,7 @@ export interface PersonalTask {
 
 export const getPersonalTasks = async (): Promise<PersonalTask[]> => {
   const url = `http://localhost:5005/personalTasks`;
-  const personalTasks = await fetch(url, { method: "GET" });
+  const personalTasks = await fetch(url, { method: "GET", cache: "no-cache" });
   if (personalTasks.status !== 200) {
     throw "There was an error";
   }

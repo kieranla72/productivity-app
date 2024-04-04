@@ -1,7 +1,7 @@
 import { Inter } from "next/font/google";
 import { AppRouterCacheProvider } from "@mui/material-nextjs/v13-appRouter";
 import "./globals.css";
-import { SideNav } from "./ui/SideNav/SideNav";
+import { SideNav } from "./ui/sideNav/sideNav";
 import ThemeProviderParent from "./theme/themeProviderParent";
 
 const inter = Inter({ subsets: ["latin"] });

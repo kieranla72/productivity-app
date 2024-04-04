@@ -69,11 +69,6 @@ const Drawer = styled(MuiDrawer, {
 
 export const SideNav = ({ children }: React.PropsWithChildren) => {
   const [open, setOpen] = React.useState(false);
-  const [isClient, setIsClient] = React.useState(false);
-
-  React.useEffect(() => {
-    setIsClient(true);
-  }, []);
 
   const toggleDrawerOpen = () => {
     setOpen((currentOpen) => !currentOpen);
@@ -115,10 +110,7 @@ export const SideNav = ({ children }: React.PropsWithChildren) => {
                 >
                   {index % 2 === 0 ? <InboxIcon /> : <MailIcon />}
                 </ListItemIcon>
-                <ListItemText
-                  primary={isClient ? label : ""}
-                  sx={{ opacity: open ? 1 : 0 }}
-                />
+                <ListItemText primary={label} sx={{ opacity: open ? 1 : 0 }} />
               </ListItemButton>
             </ListItem>
           ))}

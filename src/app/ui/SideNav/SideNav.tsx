@@ -1,6 +1,6 @@
 "use client";
 import * as React from "react";
-import { styled, useTheme, Theme, CSSObject } from "@mui/material/styles";
+import { styled, Theme, CSSObject } from "@mui/material/styles";
 import Box from "@mui/material/Box";
 import MuiDrawer from "@mui/material/Drawer";
 import List from "@mui/material/List";
@@ -15,7 +15,6 @@ import ListItemIcon from "@mui/material/ListItemIcon";
 import ListItemText from "@mui/material/ListItemText";
 import InboxIcon from "@mui/icons-material/MoveToInbox";
 import MailIcon from "@mui/icons-material/Mail";
-import { Typography } from "@mui/material";
 
 const drawerWidth = 240;
 
